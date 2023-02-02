@@ -24,7 +24,7 @@ module.exports = () => {
       }),
       // inject our custom service worker
       new InjectManifest({
-        swSrc: './src/sw.js',
+        swSrc: './src-sw.js',
         swDest: 'src-sw.js',
       }),
       // creating a manifest.json file
@@ -38,7 +38,7 @@ module.exports = () => {
         background_color: '#225ca3',
         theme_color: '#225ca3',
         start_url: './',
-        publicPath: './',
+        publicPath: '/',
         icons: [
           {
             src: path.resolve('src/images/logo.png'),
