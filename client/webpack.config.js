@@ -37,7 +37,7 @@ module.exports = () => {
         description: 'The Craziest Web Text Editor You Can Find',
         background_color: '#225ca3',
         theme_color: '#225ca3',
-        start_url: './',
+        start_url: '/',
         publicPath: '/',
         icons: [
           {
@@ -57,7 +57,7 @@ module.exports = () => {
           use: ['style-loader', 'css-loader'],
         },
         {
-          // regex to search for js and use ES6 instead
+          // regex to search for js to add to bundle
           test: /\.m?js$/,
           exclude: /node_modules/,
           use: {
